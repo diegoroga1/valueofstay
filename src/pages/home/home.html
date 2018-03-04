@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+
+    <ion-title>Value Of Stay</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Selecciona un hotel</h3>
+
+  <div>
+    <ion-list class="lista-hoteles">
+      <ion-item>
+        <ion-buttons class="ion-button ">
+          <button (click)="goForm('hotel1')" ion-button class=" ">Hotel 1 - Miriam
+
+
+          </button>
+        </ion-buttons>
+      </ion-item>
+      <ion-item>
+        <ion-buttons class="center">
+          <button (click)="goForm('hotel2')"  ion-button  color="secondary" class=" ">Hotel 2 - Lara
+
+          </button>
+        </ion-buttons>
+      </ion-item>
+      <ion-item>
+        <ion-buttons>
+          <button (click)="goForm('hotel3')" ion-button color="dark" class=" ">Hotel 3 - Tamara
+          </button>
+        </ion-buttons>
+      </ion-item>
+
+
+    </ion-list>
+
+  </div>
+
+
+</ion-content>

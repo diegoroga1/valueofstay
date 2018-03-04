@@ -1,0 +1,51 @@
+<!--
+  Generated template for the SelectFormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Value Of Stay</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+  <h3>Selecciona el tipo de formulario</h3>
+  <div>
+    <ion-list class="lista-formularios">
+      <ion-item>
+        <ion-buttons class="ion-button ">
+          <button (click)="createForm('booking')" ion-button class="  booking-button">
+            <img  src="assets/imgs/booking.png">
+
+
+          </button>
+        </ion-buttons>
+      </ion-item>
+      <ion-item>
+        <ion-buttons class="center">
+          <button (click)="createForm('tripadvisor')"  ion-button  class=" tripadvisor-button">
+            <img  src="assets/imgs/ta.png">
+
+          </button>
+        </ion-buttons>
+      </ion-item>
+      <ion-item>
+        <ion-buttons>
+          <button (click)="createForm('holiday')" ion-button class=" holiday-button">
+            <img  src="assets/imgs/hc.png">
+          </button>
+        </ion-buttons>
+
+      </ion-item>
+
+
+    </ion-list>
+
+  </div>
+</ion-content>

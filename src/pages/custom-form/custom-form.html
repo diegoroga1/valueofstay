@@ -1,0 +1,43 @@
+<!--
+  Generated template for the CustomFormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{titulo}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="submitForm()">
+    <div>
+      <h3>Classification variables</h3>
+      <span>Variables de clasificación / Klassifizierungsvariablen</span>
+    </div>
+
+    <ion-item *ngFor="let c of data|async">
+      <ion-label>Todo</ion-label>
+      <p>{{c}}</p>
+
+
+
+      <p>{{c.$key}}</p>
+      <p>{{c.value}}</p>
+    </ion-item>
+    <ion-item>
+      <ion-label>Description</ion-label>
+    </ion-item>
+    <div>
+      <h3>Questionnaire</h3>
+      <span>Cuestionario / Fragebogen</span>
+
+    </div>
+
+    <button ion-button type="submit" block>Add Todo</button>
+  </form>
+</ion-content>
